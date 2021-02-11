@@ -1,0 +1,234 @@
+{
+  "chrome-grid": {
+    "host": "http://xlzvbta0053x.lvdc.kp.org:4445/wd/hub",
+    "browserCapabilities": {
+      "browserName": "chrome",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "firefox-grid-mac": {
+    "host": "http://rumba.lvdc.kp.org:4445/wd/hub",
+    "browserCapabilities": {
+      "browserName": "firefox",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true,
+      "setAssumeUntrustedCertificateIssuer": false,
+      "acceptSslCerts": true,
+      "takesScreenshot": true
+    }
+  },
+  "firefox-grid": {
+    "host": "http://xlzvbta0012x.lvdc.kp.org:4445/wd/hub",
+    "browserCapabilities": {
+      "browserName": "firefox",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true,
+      "setAssumeUntrustedCertificateIssuer": false,
+      "acceptSslCerts": true,
+      "takesScreenshot": true
+    }
+  },
+  "ie-grid": {
+    "host": "http://xlzvbta0094x.lvdc.kp.org:4445/wd/hub",
+    "browserCapabilities": {
+      "browserName": "internet explorer",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "ie-grid-ie": {
+    "host": "http://xlzvbta0094x.lvdc.kp.org:4445/wd/hub",
+    "browserCapabilities": {
+      "browserName": "internet explorer",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "ie-grid-chrome": {
+    "host": "http://xlzvbta0094x.lvdc.kp.org:4445/wd/hub",
+    "browserCapabilities": {
+      "browserName": "chrome",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "ie-grid-firefox": {
+    "host": "http://xlzvbta0094x.lvdc.kp.org:4445/wd/hub",
+    "browserCapabilities": {
+      "browserName": "firefox",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "perfecto": {
+    "inhouse": "https://cloud.kp.perfectomobile.kaiserpermanente.org/nexperience/perfectomobile/wd/hub",
+    "remote": "https://KP.perfectomobile.com/nexperience/perfectomobile/wd/hub"
+  },
+  "ie": {
+    "browserName": "internet explorer",
+    "version": "",
+    "platform": "ANY",
+    "javascriptEnabled": true
+  },
+  "safari": {
+    "browserName": "safari",
+    "version": "",
+    "platform": "ANY",
+    "javascriptEnabled": true,
+    "cssSelectorsEnabled": true
+  },
+  "chrome": {
+    "browserName": "chrome",
+    "version": "",
+    "platform": "ANY",
+    "javascriptEnabled": true
+  },
+  "firefox": {
+    "setAssumeUntrustedCertificateIssuer": false,
+    "marionette": true,
+    "platform": "MAC",
+    "acceptSslCerts": true,
+    "javascriptEnabled": true,
+    "browserName": "firefox",
+    "takesScreenshot": true
+  },
+  "sel3": {
+    "host": "http://xlzvbta0135x.lvdc.kp.org:4445/wd/hub",
+    "browserCapabilities": {
+      "marionette": true,
+      "browserName": "firefox",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "firefox-v39": {
+    "platform": "MAC",
+    "acceptSslCerts": true,
+    "javascriptEnabled": true,
+    "browserName": "firefox",
+    "rotatable": false,
+    "locationContextEnabled": true,
+    "version": "39",
+    "cssSelectorsEnabled": true,
+    "databaseEnabled": true,
+    "handlesAlerts": true,
+    "browserConnectionEnabled": true,
+    "nativeEvents": false,
+    "webStorageEnabled": true,
+    "applicationCacheEnabled": true,
+    "takesScreenshot": true
+  },
+  "phantomjs": {
+    "browserName": "phantomjs",
+    "version": "",
+    "platform": "ANY",
+    "javascriptEnabled": true
+  },
+  "iphone": {
+    "browserName": "safari",
+    "appium-version": "1.4.1",
+    "platformName": "iOS",
+    "platformVersion": "8.3",
+    "deviceName": "iPhone 6"
+  },
+  "debug-e124": {
+    "host": "http://172.29.1.124:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "internet explorer",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "debug-c124": {
+    "host": "http://172.29.1.124:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "chrome",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "debug-f124": {
+    "host": "http://172.29.1.124:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "firefox",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "win10-IE": {
+    "host": "http://172.29.1.139:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "internet explorer",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "win10-Chrome": {
+    "host": "http://172.29.1.139:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "chrome",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "win10-Firefox": {
+    "host": "http://172.29.1.139:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "firefox",
+      "marionette": true,
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "win10-Edge": {
+    "host": "http://172.29.1.139:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "Edge",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "win7-IE": {
+    "host": "http://172.29.1.140:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "internet explorer",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "win7-Chrome": {
+    "host": "http://172.29.1.140:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "chrome",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  },
+  "win7-Firefox": {
+    "host": "http://172.29.1.140:5560/wd/hub",
+    "browserCapabilities": {
+      "browserName": "firefox",
+      "version": "",
+      "platform": "ANY",
+      "javascriptEnabled": true
+    }
+  }
+}

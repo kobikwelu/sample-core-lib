@@ -1,0 +1,110 @@
+#!/bin/bash
+
+genAllureReport() {
+  # allure report generator
+  echo $foldersuffix
+  regenerateXML "$@"
+  echo "Generating Allure Report at location ./allure-reports$foldersuffix"
+  echo "allure generate allure-results$(get_testresult_dir_suffix $@)/"
+  cp -r ./allure-reports$foldersuffix archive-allure-results/allure-results$foldersuffix-$(date +"%Y%b%d-%H%M%S")
+  allure generate allure-results$foldersuffix/ -o allure-reports$foldersuffix/ || ~/allure-commandline/bin/allure.bat generate allure-results$foldersuffix/ -o allure-reports$foldersuffix/ 
+  }
+
+regenerateXML(){
+  foldersuffix=$(get_testresult_dir_suffix $@)
+  if [ ! -d "node_modules/kp-webdriverjs-utils"  ]; then
+    node ./reporter.js $foldersuffix
+  else
+    node ./node_modules/kp-webdriverjs-utils/reporter.js $foldersuffix
+  fi
+}
+
+get_testresult_dir_suffix() {
+  suffix=""
+  for value in $@;
+  do
+    if [[ $value == \--resultsdirsuffix* ]];
+    then
+      suffix=$(echo ${value#*=} | sed "s/,/ /g")
+      cp -r allure-results allure-results$suffix
+      rm -Rf allure-results
+      break;
+    fi
+  done
+  echo "$suffix"
+}
+
+get_if_jenkins_run() {
+  jenkins="no"
+  for value in $@;
+  do
+    if [[ $value == \--jenkins ]];
+    then
+      jenkins='yes'
+      break;
+    fi
+  done
+  echo "$jenkins"
+}
+
+grunt() {
+  allureresultsfolder="allure-results$(get_testresult_dir_suffix $@)"
+  failedresultsdir=""
+  if [ "$(echo archive-allure-results/$allureresultsfolder*)" != "archive-allure-results/$allureresultsfolder*" ]; then
+    failedresultsdir="$(ls -dt archive-allure-results/$allureresultsfolder* | grep / | sed 's/:\/' | head -n 1)"
+  fi
+  "$(npm bin)/grunt" "--failedresultsdir=$failedresultsdir " "$@"
+}
+
+echo "$@"
+
+get_testresult_dir_suffix $@
+get_if_jenkins_run $@
+if [[ $jenkins == 'no' ]];
+    then
+        grunt "$@"
+        for value in $@;
+        do
+         if [[ $value == \--reporter=*allure* ]];
+           then
+              genAllureReport "$@"
+         fi
+         if [[ $value == \--reporter=*multi* ]];
+           then
+              genAllureReport "$@"
+         fi
+         if [[ $value == \--reporter=*tap* ]];
+           then
+             echo "Reports Generated Successfully"
+         fi
+         if [[ $value == \--reporter=*awesome* ]];
+           then
+             echo "Reports Generated Successfully"
+         fi
+        done
+fi
+
+if [[ $jenkins == 'yes' ]];
+    then
+        grunt "$@"
+        regenerateXML "$@"
+        for value in $@;
+           do
+             if [[ $value == \--reporter=*allure* ]];
+               then
+                  genAllureReport "$@"
+             fi
+             if [[ $value == \--reporter=*multi* ]];
+               then
+                  genAllureReport "$@"
+             fi
+             if [[ $value == \--reporter=*tap* ]];
+               then
+                 echo "Reports Generated Successfully"
+             fi
+             if [[ $value == \--reporter=*awesome* ]];
+               then
+                 echo "Reports Generated Successfully"
+             fi
+        done
+fi

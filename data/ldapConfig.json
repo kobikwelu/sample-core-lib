@@ -1,0 +1,74 @@
+{
+  "dev20": {
+    "host": "ldap://xjzxdap0203x.dta.kp.org:10389",
+    "user": "uid=bindlocal,ou=members,o=kaiser permanente,c=us",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "password": "bindlocal"
+  },
+  "hint2": {
+    "host": "ldap://xlzxdap0067x.lvdc.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=qausradm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "qaWPPh1"
+  },
+  "hqab": {
+    "host": "ldap://codsrqab.lvdc.kp.org:11389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=qausradm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "qaWPP@2b"
+  },
+  "hpp_ndc": {
+    "host": "ldap://codsrpp.lvdc.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid= c605764,ou=monitor,o=kaiser permanente,c=us",
+    "password": "uJ3cuvPH"
+  },
+  "wppdev4": {
+    "host": "ldap://xlzssap0024x.lvdc.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid= bindlocal, ou=members,o=kaiser permanente,c=us",
+    "password": "bindlocal"
+  },
+  "wppdev3": {
+    "host": "ldap://xlzxsap0010x.lvdc.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=udsadm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "wppUDSd3v"
+  },
+  "hint3": {
+    "host": "ldap://xlzxsap0011x.lvdc.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=qausradm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "qaWPPh3"
+  },
+  "hint1": {
+    "host": "ldap://xlzxdap0036x.lvdc.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=udsadm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "wppUDSint1"
+  },
+  "hqa": {
+    "host": "ldap://codsrqa.lvdc.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=udsadm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "wpUD$HQA"
+  },
+  "dev10": {
+    "host": "ldap://xjzxdap0100x.dta.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=udsadm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "wppUDSd3v"
+  },
+  "hint10": {
+    "host": "ldap://xjzxiap0100x.dta.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=udsadm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "wppUDSd3v"
+  },
+  "hqa10": {
+    "host": "ldap://xjzxqap0100x.dta.kp.org:10389",
+    "DN": "ou=temp,ou=members,o=kaiser permanente,c=us",
+    "user": "uid=udsadm,ou=monitor,o=kaiser permanente,c=us",
+    "password": "wppUDSd3v"
+  }
+}

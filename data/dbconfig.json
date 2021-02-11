@@ -1,0 +1,177 @@
+{
+  "dev1": {
+    "host": "xlzsddb0010x.lvdc.kp.org",
+    "port": "1521",
+    "sid": "WPPDEV1",
+    "user": "wpcoapp",
+    "password": "wpc9app",
+    "connectString": "xlzsddb0010x.lvdc.kp.org:1521/APCODEV1",
+    "tags": [
+      "read",
+      "write"
+    ]
+  },
+  "dev3": {
+    "host": "xlzsddb0011x.lvdc.kp.org",
+    "port": "1521",
+    "sid": "WPPDEV3",
+    "user": "wpcoapp",
+    "password": "wpc9app",
+    "tags": [
+      "read",
+      "write"
+    ]
+  },
+  "dev10": {
+    "host": "xjzxddb0100x.dta.kp.org",
+    "port": "1521",
+    "sid": "WPPDEV10",
+    "user": "wpcoapp",
+    "password": "wpc9app",
+    "tags": [
+      "read"
+    ],
+    "db_schema": "WPCOAPPXS11X"
+  },
+  "dev20": {
+    "host": "10.8.136.80",
+    "port": "1521",
+    "sid": "APPDEV20",
+    "user": "wpcoapp",
+    "password": "wpc9app",
+    "tags": [
+      "read"
+    ]
+  },
+  "hint1": {
+    "host": "xjzxiap0011x.dta.kp.org",
+    "port": "1521",
+    "sid": "APCOINT3",
+    "user": "wpcoappxd36x",
+    "password": "wpc9app",
+    "tags": [
+      "read"
+    ]
+  },
+  "hint2": {
+    "host": "xjzxiap0021x.dta.kp.org",
+    "port": "1521",
+    "sid": "APCOINT4",
+    "user": "wpcoappxd67x",
+    "password": "wpc9app",
+    "tags": [
+      "read"
+    ]
+  },
+  "hint3": {
+    "host": "xjzxiap0031x.dta.kp.org",
+    "port": "1521",
+    "sid": "APCODEV2",
+    "user": "wpcoappxs11x",
+    "password": "wpc9app",
+    "tags": [
+      "read"
+    ]
+  },
+  "hint3-backukp": {
+    "host": "xjzxiap0033x.dta.kp.org",
+    "port": "1521",
+    "sid": "WPCODEV2",
+    "user": "wpcoappxs11x",
+    "password": "wpc9app",
+    "tags": [
+      "read"
+    ]
+  },
+  "hint10": {
+    "host": "xjzxddb0100x.dta.kp.org",
+    "port": "1521",
+    "sid": "WPPINT10",
+    "user": "wpcoapp",
+    "password": "wpc9app",
+    "tags": [
+      "read"
+    ],
+    "db_schema": "WPCOAPPXS11X"
+  },
+  "hqa": {
+    "host": "xjzxqap0014x.dta.kp.org",
+    "port": "1521",
+    "sid": "APCOQA1",
+    "user": "apprwtester",
+    "password": "apprwtester",
+    "tags": [
+      "read"
+    ]
+  },
+  "hqab": {
+    "host": "xjzxqap0024x.dta.kp.org",
+    "port": "1521",
+    "sid": "APCOQA2",
+    "user": "apprwtester",
+    "password": "apprwtester",
+    "tags": [
+      "read"
+    ]
+  },
+  "hqac": {
+    "host": "xlzsddb0030x.lvdc.kp.org",
+    "port": "1521",
+    "sid": "APCOQA3",
+    "user": "wpcoapp",
+    "password": "wpc3app",
+    "tags": [
+      "read"
+    ]
+  },
+  "hqa10": {
+    "host": "xjzxddb0100x.dta.kp.org",
+    "port": "1521",
+    "sid": "WPPQA10",
+    "user": "wpcoapp",
+    "password": "wpc9app",
+    "tags": [
+      "read"
+    ],
+    "db_schema": "WPCOAPPXS11X"
+  },
+  "cpm_dsn7": {
+    "host": "db2connd2.wcdc.kp.org",
+    "port": "50000",
+    "protocol": "TCPIP",
+    "driver": "DB2",
+    "databaseName": "DSN7"
+  },
+  "wppdev4": {
+    "host": "xjzxdap0042x.dta.kp.org",
+    "port": "1521",
+    "sid": "WPPDEV4S",
+    "user": "wpcoapp",
+    "password": "wpc9app",
+    "tags": [
+      "read",
+      "write"
+    ]
+  },
+  "hpp_ndc": {
+    "host": "xlzsbdb2x.lvdc.kp.org",
+    "port": "1521",
+    "sid": "APCOPP1",
+    "user": "wpcoapp",
+    "password": "r1loadtest",
+    "tags": [
+      "read"
+    ]
+  },
+  "wppdev3": {
+    "host": "xjzxdap0031x.dta.kp.org",
+    "port": "1521",
+    "sid": "WPPDEV3",
+    "user": "wpcoapp",
+    "password": "wpc9app",
+    "tags": [
+      "read",
+      "write"
+    ]
+  }
+}

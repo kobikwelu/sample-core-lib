@@ -1,0 +1,11 @@
+{
+  "baseUrl": {
+    "home": "https://env.kaiserpermanente.org",
+    "contextual": "https://env.kaiserpermanente.org/sign-on.html#/signon",
+    "logoff": "https://env.kaiserpermanente.org/health/mycare/logout.wpp"
+  },
+  "links": {
+    "samplesignon": "https://dev20.kaiserpermanente.org/sign-on.html",
+    "directUrl": "https://wppdev3.kaiserpermanente.org/coverage-costs.html"
+  }
+}

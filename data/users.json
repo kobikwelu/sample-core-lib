@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "canSignon": true,
+      "tags": [
+        "default",
+        "member",
+        "NCAL"
+      ],
+      "group": "Signon",
+      "label": "ncal User",
+      "password": "password7",
+      "username": "mrn14434988",
+      "mrn":"14434988"
+    },
+    {
+      "canSignon": true,
+      "tags": [
+        "NCAL",
+        "member",
+        "some-unit",
+        "mail"
+      ],
+      "group": "Member",
+      "label": "ncal User",
+      "password": "password7",
+      "username": "mrn14432223",
+      "mrn":"14432223"
+    },
+    {
+      "canSignon": true,
+      "tags": [
+        "haw-unit",
+        "member",
+        "HAW",
+        "mail"
+      ],
+      "group": "Member",
+      "label": "haw User",
+      "password": "password7",
+      "username": "haw9850945",
+      "mrn":"9850945"
+    },
+    {
+      "canSignon": true,
+      "tags": [
+        "mid-unit",
+        "member",
+        "MID"
+      ],
+      "group": "Member",
+      "label": "mid User",
+      "password": "password7",
+      "username": "mid74190793",
+      "mrn":"74190793"
+    },
+    {
+      "canSignon": true,
+      "tags": [
+        "knw-unit",
+        "member",
+        "KNW",
+        "mail"
+      ],
+      "group": "Member",
+      "label": "knw User",
+      "password": "password7",
+      "username": "knw23960836",
+      "mrn":"23960836"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "signon":
+	{
+		"username":"[name=username]",
+		"password":"[name=password]",
+        "signOnButton": "#signonButtonDisplay",
+        "signOnForm" : "#signonform"
+    },
+  "inbox":
+  {
+    "composeButton" : "#compose-button"
+  },
+  "landing":
+  {
+    "loadingIcon": ".icon-loading"
+  }
+}

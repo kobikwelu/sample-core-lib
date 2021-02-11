@@ -1,0 +1,41 @@
+{
+   "product-name":"ylva",
+   "application-type" : "npm",
+   "default-emails":[
+     "alberto.aguilar@kp.org","pradeep.christhuraja@kp.org"
+   ],
+   "default-hipchat-rooms":[
+      "PQE Automation Chapter"
+   ],
+   "approval-override-group" : "",
+   "stages":{
+      "npm-build":{
+         "source-directory" : "",
+         "publish-directory":"",
+         "npm-run-script" : "",
+         "js-lcov-report-path" : "",
+         "ts-lcov-report-path" : "",
+         "skip-test-flag": true,
+         "sonar" : true,
+         "sonar-coverage-exclusions" : [
+                     "**/node_modules","**/kptheme","**/libdoc","**/*.jar","**/*.java"
+          ],
+         "sonar-exclusions" : ["**/node_modules",
+          "**/kptheme",
+          "**/libdoc",
+          "**/*.jar",
+          "**/*.java"],
+         "html-reports":{
+         "pipeline-coverage-report":{
+             "report-dir":"",
+             "html-file":""
+           }
+         }
+      },
+      "whitehat-analysis" : {
+        "cron-scan-interval" : "(0-8) * * * *",
+        "nexus-iq-app-id" : "",
+        "scan-branch" : "master"
+      }
+  }
+}
