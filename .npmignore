@@ -6,3 +6,4 @@ pages/unit/helper_page.js
 .editorconfig
 .eslint*
 driverconfig.properties
+/node_modules
